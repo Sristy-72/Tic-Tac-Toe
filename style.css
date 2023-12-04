@@ -1,0 +1,61 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url(".jpg");
+    background-size: cover;
+}
+
+.game-container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8); 
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 5px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #333;
+    font-size: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: #fff;
+}
+.cell.player1 {
+    background-color: red;
+    color: #fff;
+}
+
+.cell.player2 {
+    background-color: green;
+    color: #fff;
+}
+
+
+.message {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+#resetBtn {
+    font-size: 1em;
+    padding: 5px 10px;
+    cursor: pointer;
+}
